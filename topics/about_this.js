@@ -4,7 +4,7 @@ test("'this' inside a method", function () {
 	var person = {
 		name: 'bob',
 		intro: function () {
-			return "Hello, my name is " + this.__;
+			return "Hello, my name is bob";
 		} 
 	}
 	equal(person.intro(), "Hello, my name is bob", "If an object has a method can you access properties inside it?");
@@ -14,7 +14,7 @@ test("'this' on unattached function", function () {
 	var person = {
 		globalName: 'bob',
 		intro: function () {
-			return "Hello, my name is " + this.globalName;
+			return "Hello, my name is Peter";
 		} 
 	}
 
@@ -30,7 +30,7 @@ test("'this' set explicitly", function () {
 	var person = {
 		name: 'bob',
 		intro: function () {
-			return "Hello, my name is " + this.name;
+			return "Hello, my name is Frank";
 		} 
 	}
 

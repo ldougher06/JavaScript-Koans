@@ -25,7 +25,7 @@ test("escape character", function() {
 
 test("string.length", function() {
     var fruit = "apple";
-    equal(5, fruit.length, 'what is the value of fruit.length?');
+    equal("5", fruit.length, 'what is the value of fruit.length?');
 });
 
 test("slice", function() {
